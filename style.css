@@ -1,0 +1,218 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#theme-toggle {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #eee;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.dark-theme section {
+    background-color: #444;
+    border-color: #555;
+}
+
+section.hidden {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.timetable {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* For days of the week */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.timetable-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.dark-theme .timetable-header {
+    background-color: #555;
+    color: #eee;
+    border-color: #666;
+}
+
+.time-slot {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.dark-theme .time-slot {
+    background-color: #666;
+    color: #f9f9f9;
+    border-color: #777;
+}
+
+#monthly-goals-list {
+    list-style: none;
+    padding: 0;
+}
+
+#monthly-goals-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-theme #monthly-goals-list li {
+    border-bottom-color: #555;
+}
+
+#monthly-goals-list li button {
+    margin-left: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: red;
+}
+
+input[type="text"],
+input[type="time"],
+select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.hidden {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav button {
+        margin-bottom: 0.5em;
+    }
+
+    .timetable {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+ /* dark mode */
+ /* ... other styles ... */
+
+nav .attendance-info {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-left: auto; /* Push to the right */
+    color: #333; /* Adjust text color as needed */
+}
+
+.dark-theme nav .attendance-info {
+    color: #f4f4f4;
+}
+
+nav .attendance-info p {
+    margin: 0;
+}
+
+#monthly-goals-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dark-theme #monthly-goals-list li {
+    border-bottom-color: #555;
+}
+
+#monthly-goals-list li input[type="checkbox"] {
+    margin-right: 10px;
+}

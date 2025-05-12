@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Routine Plan Practice Schedule!!</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <header>
+    <h1> Routine Plan Practice Schedule!!</h1>
+    <button id="theme-toggle"> Dark Theme </button>
+    </header>
+
+    <nav>
+        <button id="monthly-btn" data-section="monthly-goals-section">Monthly Goals </button>
+        <button id="weekly-btn" data-section="weekly-routine-section">Weekly Routine</button>
+        <button id="daily-btn" data-section="daily-schedule-section">Daily Schedule</button>
+        <div class="attendance-info">
+        <p>Monthly Attendance: <span id="monthly-attendance-count">0</span></p>
+        <p>Weekly Attendance: <span id="weekly-attendance-count">0</span></p>
+        <p>Daily Attendance: <span id="daily-attendance-count">0</span></p>
+        </div>
+    </nav>
+
+    <main>
+        <section id="monthly-goals-section" class="active-section">
+            <h2>Monthly Goals Total Projects Practice Schedule </h2>
+            <ul id="monthly-goals-list">
+            </ul>
+            <div class="input-area">
+            <input type="text" id="new-monthly-goal" placeholder="Add new goal">
+            <button id="add-monthly-goal-btn">Add Goal!</button>
+            </div>
+        </section>
+
+        <section id="weekly-routine-section">
+            <h2>Weekly Routine!</h2>
+            <div class="timetable" id="weekly-timetable">
+            </div>
+            <button id="add-weekly-slot-btn">Add Time Slot!</button>
+            <div id="weekly-slot-form" class="hidden">
+                <select id="slot-day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+                <input type="time" id="slot-start-time">
+                <input type="time" id="slot-end-time">
+                <input type="text" id="slot-activity" placeholder="Activity">
+                <button id="save-weekly-slot-btn">Save Slot</button>
+                <button id="cancel-weekly-slot-btn">Cancel</button>
+            </div>
+        </section>
+
+        <section id="daily-schedule-section">
+            <h2>Daily Schedule!</h2>
+            <div class="timetable" id="daily-timetable">
+            </div>
+            <button id="add-daily-task-btn">Add Task!</button>
+            <div id="daily-task-form" class="hidden">
+                <input type="time" id="task-start-time">
+                <input type="time" id="task-end-time">
+                <input type="text" id="task-description" placeholder="Task Description">
+                <button id="save-daily-task-btn">Save Task</button>
+                <button id="cancel-daily-task-btn">Cancel</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 years Routine Plan Practice Schedule</p>
+    </footer>
+ <script src="script.js"></script>
+ </body>
+ </html>
