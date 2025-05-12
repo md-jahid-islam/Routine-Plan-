@@ -46,7 +46,7 @@ header h1 {
     padding: 0.5em 1em;
     cursor: pointer;
     border: none;
-    background-color: #eee;
+    background-color: lab(73.52% 32.8 13.75);
 }
   /* --- main --- */
 
@@ -218,9 +218,10 @@ nav .attendance-info p {
 }
 
 .dark-theme #monthly-goals-list li {
-    border-bottom-color: #555;
+ border-bottom-color: #555;
 }
 
 #monthly-goals-list li input[type="checkbox"] {
-    margin-right: 10px;
+ margin-right: 10px;
 }
+
