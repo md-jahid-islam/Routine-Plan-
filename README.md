@@ -1,4 +1,4 @@
-1. Students Study Plan Routine is a time management web app for students and developers and general all students use to work my projects.
+1. Students Study Plan Routine is a time management web app for students and developers and general all students use to work my projects Study Plan Routine is a time management.
 2. It helps users organize their study goals and project tasks effectively.
 3. The Monthly Attendance section tracks overall participation and goals.
 4. Weekly Attendance Work allows users to monitor their weekly study progress.
