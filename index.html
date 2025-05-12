@@ -11,16 +11,16 @@
     <h1> Routine Plan Practice Schedule!!</h1>
     <button id="theme-toggle"> Dark Theme </button>
     </header>
-    <nav>
-        <button id="daily-btn" data-section="daily-schedule-section"> Students Schedule Attendance</button>
-        <button id="daily-btn" data-section="daily-schedule-section"> Students Schedule Absent </button>
-
+    <nav>   
         <div class="attendance-info">
-        <p>Monthly Attendance: <span id="monthly-attendance-count">0</span></p>
-        <p>Weekly Attendance: <span id="weekly-attendance-count">0</span></p>
-        <p>Daily Attendance: <span id="daily-attendance-count">0</span></p>
+        <p>Monthly Attendance Projects: <span id="monthly-attendance-count">0</span></p>
+        <p>Weekly Attendance works: <span id="weekly-attendance-count">0</span></p>
+        <p>Daily Attendance works: <span id="daily-attendance-count">0</span></p>
         </div>
     </nav>
+  <!-- Toast Message Container -->
+  <div id="toast"></div>
+
     <main>
         <section id="monthly-goals-section" class="active-section">
             <h2>Monthly Goals Total Projects Practice Schedule </h2>
@@ -28,14 +28,14 @@
             </ul>
             <div class="input-area">
             <input type="text" id="new-monthly-goal" placeholder="Add new goal">
-            <button id="add-monthly-goal-btn">Add Goal!</button>
+            <button id="add-monthly-goal-btn">Add Projects Name!</button>
             </div>
         </section>
         <section id="weekly-routine-section">
             <h2>Weekly Routine!</h2>
             <div class="timetable" id="weekly-timetable">
             </div>
-            <button id="add-weekly-slot-btn">Add Time Slot!</button>
+            <button id="add-weekly-slot-btn">Add Time Slot work!</button>
             <div id="weekly-slot-form" class="hidden">
                 <select id="slot-day">
                     <option value="Monday">Monday</option>
