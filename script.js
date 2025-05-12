@@ -7,7 +7,7 @@
     const weeklyAttendanceCountDisplay = document.getElementById('weekly-attendance-count');
     const dailyAttendanceCountDisplay = document.getElementById('daily-attendance-count');
 
-    // --- Helper Functions --- // 
+ // --- Helper Functions --- // 
     function saveData(key, data) {
         localStorage.setItem(key, JSON.stringify(data));
     }
@@ -57,7 +57,7 @@
             .filter(task => task.completed).length;
     }
 
-    // --- Navigation --- // 
+ // --- Navigation --- // 
     navButtons.forEach(button => {
         button.addEventListener('click', () => {
             const sectionId = button.getAttribute('data-section');
@@ -65,7 +65,7 @@
         });
     });
 
-    // --- Monthly Goals --- // 
+ // --- Monthly Goals --- // 
     const monthlyGoalsList = document.getElementById('monthly-goals-list');
     const newMonthlyGoalInput = document.getElementById('new-monthly-goal');
     const addMonthlyGoalBtn = document.getElementById('add-monthly-goal-btn');
@@ -112,7 +112,7 @@
         }
     });
 
-    // --- Weekly Routine --- // 
+ // --- Weekly Routine --- // 
     const weeklyTimetable = document.getElementById('weekly-timetable');
     const addWeeklySlotBtn = document.getElementById('add-weekly-slot-btn');
     const weeklySlotForm = document.getElementById('weekly-slot-form');
@@ -187,7 +187,7 @@
         clearInput('slot-activity');
     }
 
-    // --- Daily Schedule --- // 
+ // --- Daily Schedule --- // 
     const dailyTimetable = document.getElementById('daily-timetable');
     const addDailyTaskBtn = document.getElementById('add-daily-task-btn');
     const dailyTaskForm = document.getElementById('daily-task-form');
@@ -198,7 +198,7 @@
     const taskDescriptionInput = document.getElementById('task-description');
     let dailyTasks = loadData('dailyTasks') || []; 
     
-    // --- renderDailySchedule --- //
+ // --- renderDailySchedule --- //
     function renderDailySchedule() {
         dailyTimetable.innerHTML = '';
         const today = new Date().toLocaleDateString();
@@ -227,7 +227,7 @@
             dailyTimetable.appendChild(taskDiv);
         });
 
-        // --- Display weekly routine for today --- //
+ // --- Display weekly routine for today --- //
         const currentDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' });
         weeklyRoutine[currentDayName]?.forEach(slot => {
             const slotDiv = document.createElement('div');
@@ -274,17 +274,17 @@
         clearInput('task-description');
     }
 
-    // --- Theme Toggle --- //
+ // --- Theme Toggle --- //
     themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-theme');
         const isDark = body.classList.contains('dark-theme');
         saveData('theme', isDark ? 'dark' : 'light');
     });
 
-    // --- Initialization --- //
+ // --- Initialization --- //
     const savedTheme = loadData('theme');
     if (savedTheme === 'dark') {
-        body.classList.add('dark-theme');
+    body.classList.add('dark-theme');
     }
  // --- Initial update --- // 
     showSection('monthly-goals-section');

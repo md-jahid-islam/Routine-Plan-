@@ -1,4 +1,5 @@
-body {
+ /* --- body --- */
+ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -6,13 +7,15 @@ body {
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+ /* --- dark theme --- */
 
 .dark-theme {
     background-color: #333;
     color: #f4f4f4;
 }
+ /* --- header --- */
 
-header {
+ header {
     background-color: #333;
     color: #fff;
     padding: 1em;
@@ -25,57 +28,62 @@ header {
 header h1 {
     margin: 0;
 }
-
-#theme-toggle {
+ /* --- theme-toggle --- */
+ #theme-toggle {
     padding: 0.5em 1em;
     cursor: pointer;
 }
-
-nav {
+ /* --- nav --- */
+ nav {
     background-color: #ddd;
     padding: 0.5em;
     display: flex;
     justify-content: center;
     gap: 1em;
 }
-
-nav button {
+ /* --- nav button --- */
+ nav button {
     padding: 0.5em 1em;
     cursor: pointer;
     border: none;
     background-color: #eee;
 }
+  /* --- main --- */
 
-main {
+ main {
     padding: 20px;
-}
+ }
+ /* --- section --- */
 
-section {
+ section {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 15px;
     background-color: #fff;
-}
+ }
+ /* --- dark-theme section --- */
 
-.dark-theme section {
+ .dark-theme section {
     background-color: #444;
     border-color: #555;
-}
-
+ }
+ /* --- section.hidden --- */
 section.hidden {
     display: none;
 }
 
+ /* --- section.active --- */
 section.active {
     display: block;
 }
-
-.timetable {
+ /* --- For days of the week --- */
+ .timetable {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* For days of the week */
+    grid-template-columns: repeat(7, 1fr); 
     gap: 5px;
     margin-top: 10px;
 }
+ /* --- timetable-header --- */
 
 .timetable-header {
     font-weight: bold;
@@ -84,12 +92,14 @@ section.active {
     background-color: #eee;
     border: 1px solid #ccc;
 }
+ /* --- dark-theme .timetable-header  --- */
 
 .dark-theme .timetable-header {
     background-color: #555;
     color: #eee;
     border-color: #666;
 }
+ /* --- time slot --- */
 
 .time-slot {
     border: 1px solid #ddd;
@@ -183,14 +193,12 @@ footer {
     }
 }
  /* dark mode */
- /* ... other styles ... */
-
 nav .attendance-info {
     display: flex;
     gap: 1em;
     align-items: center;
-    margin-left: auto; /* Push to the right */
-    color: #333; /* Adjust text color as needed */
+    margin-left: auto; 
+    color: #333; 
 }
 
 .dark-theme nav .attendance-info {
